@@ -19,6 +19,14 @@
   background: linear-gradient(45deg, #61438554, #51639554);
 }
 
+.horoscope__sign-name {
+  font-size: clamp(0.5625rem, 0.4489rem + 0.5682vw, 0.8125rem);
+}
+
+.horoscope__sign-date {
+  font-size: clamp(0.5rem, 0.3864rem + 0.5682vw, 0.75rem);
+}
+
 @media (min-width: 768px) and (max-width: 1024px) {
   .horoscope__sign {
     padding: 5px 15px;

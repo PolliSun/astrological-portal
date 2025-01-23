@@ -16,7 +16,7 @@
 }
 
 .card__item-button {
-  font-size: clamp(0.625rem, 0.4464rem + 0.8929vw, 1.25rem);
+  font-size: clamp(0.625rem, 0.3409rem + 1.4205vw, 1.25rem);
   display: flex;
   padding: 5px 10px;
   color: #fff;

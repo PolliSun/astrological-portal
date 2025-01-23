@@ -1,6 +1,6 @@
 .header__title {
   margin-bottom: 10px;
-  font-size: clamp(2.1875rem, 1.3839rem + 4.0179vw, 5rem);
+  font-size: clamp(2.1875rem, 1.3352rem + 4.2614vw, 4.0625rem);
   background: linear-gradient(45deg, #ff6b6b, #614385);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;

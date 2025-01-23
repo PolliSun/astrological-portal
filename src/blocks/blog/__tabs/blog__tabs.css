@@ -10,7 +10,7 @@
   border: 1px solid #ffffff33;
   border-radius: 20px;
   padding: 5px 10px;
-  font-size: clamp(0.625rem, 0.4464rem + 0.8929vw, 1.25rem);
+  font-size: clamp(0.625rem, 0.4545rem + 0.8523vw, 1rem);
   transition: all 0.4s ease;
 }
 

@@ -13,15 +13,15 @@
 }
 
 .display-horoscope {
-  min-height: 120px;
+  min-height: 130px;
 }
 
 .display-card {
-  min-height: 170px;
+  min-height: 180px;
 }
 
 .display-name {
-  min-height: 120px;
+  min-height: 150px;
 }
 
 .display-blog {
@@ -29,17 +29,17 @@
 }
 
 .display-blog.active {
-  min-height: 270px;
+  min-height: 280px;
 }
 
 .display-title {
-  font-size: clamp(0.8125rem, 0.6518rem + 0.8036vw, 1.375rem);
+  font-size: clamp(0.8125rem, 0.5568rem + 1.2784vw, 1.375rem);
   font-family: "Neucha";
   font-weight: bold;
 }
 
 .display-description {
-  font-size: clamp(0.6875rem, 0.5446rem + 0.7143vw, 1.1875rem);
+  font-size: clamp(0.6875rem, 0.4886rem + 0.9943vw, 1.125rem);
   font-family: "JetBrains Mono Italic";
 }
 

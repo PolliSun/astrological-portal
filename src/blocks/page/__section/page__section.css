@@ -10,7 +10,7 @@
 }
 
 .page__section-title {
-  font-size: clamp(0.875rem, 0.589rem + 1.429vw, 1.875rem);
+  font-size: clamp(0.875rem, 0.4205rem + 2.2727vw, 1.875rem);
   margin-bottom: 20px;
   background: linear-gradient(45deg, #61438594, #51639594);
   width: max-content;
