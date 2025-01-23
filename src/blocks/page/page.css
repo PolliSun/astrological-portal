@@ -1,0 +1,24 @@
+@import url("./__section/page__section.css");
+
+.page {
+  color: #ffffff;
+  font-family: "JetBrains Mono Regular", "Courier New", monospace;
+  background-color: #0a192f;
+  min-inline-size: 320px;
+  max-inline-size: 1024px;
+  margin: 0 auto;
+  padding: 10px;
+  position: relative;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page {
+    padding: 15px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .page {
+    padding: 20px;
+  }
+}

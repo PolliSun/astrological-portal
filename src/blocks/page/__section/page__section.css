@@ -1,0 +1,45 @@
+.page__section {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #61438533, #51639533);
+  border-radius: 20px;
+  border: 1px solid #ffffff1a;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 25px;
+}
+
+.page__section-title {
+  font-size: clamp(0.875rem, 0.589rem + 1.429vw, 1.875rem);
+  margin-bottom: 20px;
+  background: linear-gradient(45deg, #61438594, #51639594);
+  width: max-content;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-family: "Neucha";
+  letter-spacing: 3px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .page__section {
+    padding: 15px;
+    margin-top: 30px;
+  }
+  .page__section-title {
+    margin-bottom: 25px;
+    padding: 10px 25px;
+    letter-spacing: 4px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .page__section {
+    padding: 20px;
+    margin-top: 35px;
+  }
+  .page__section-title {
+    margin-bottom: 30px;
+    padding: 10px 30px;
+    letter-spacing: 5px;
+  }
+}

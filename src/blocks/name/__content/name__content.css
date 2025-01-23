@@ -1,0 +1,35 @@
+.name__content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.name__content-input {
+  background-color: #ffffff1a;
+  border: 1px solid #ffffff33;
+  border-radius: 20px;
+  padding: 5px 20px;
+  width: 100%;
+  color: #fff;
+  font-size: clamp(0.8125rem, 0.6518rem + 0.8036vw, 1.375rem);
+}
+
+.name__content-button {
+  color: #fff;
+  background-color: #ffffff1a;
+  border: 1px solid #ffffff33;
+  border-radius: 20px;
+  padding: 5px 20px;
+  font-size: clamp(0.563rem, 0.455rem + 0.536vw, 0.938rem);
+}
+
+.name__content-button:hover {
+  background-color: #25252542;
+}
+
+@media (min-width: 768px) {
+  .name__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}

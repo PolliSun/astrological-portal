@@ -1,0 +1,42 @@
+.blog__tabs {
+  display: flex;
+  gap: 5px;
+}
+
+.blog__tabs-button {
+  color: #fff;
+  align-items: center;
+  background-color: #ffffff1a;
+  border: 1px solid #ffffff33;
+  border-radius: 20px;
+  padding: 5px 10px;
+  font-size: clamp(0.625rem, 0.4464rem + 0.8929vw, 1.25rem);
+  transition: all 0.4s ease;
+}
+
+.blog__tabs-button:hover {
+  background-color: #25252542;
+}
+
+.blog__tabs-button.active {
+  background: linear-gradient(45deg, #61438554, #51639554);
+  padding: 5px 25px;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .blog__tabs-button {
+    padding: 10px 15px;
+  }
+  .blog__tabs-button.active {
+    padding: 10px 35px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .blog__tabs-button {
+    padding: 10px 20px;
+  }
+  .blog__tabs-button.active {
+    padding: 10px 40px;
+  }
+}

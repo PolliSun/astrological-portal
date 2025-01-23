@@ -1,0 +1,58 @@
+@import url("../vendor/fonts.css");
+@import url("../blocks/page/page.css");
+@import url("../blocks/header/header.css");
+@import url("../blocks/star/star.css");
+@import url("../blocks/card/card.css");
+@import url("../blocks/horoscope/horoscope.css");
+@import url("../blocks/footer/footer.css");
+@import url("../blocks/blog/blog.css");
+@import url("../blocks/name/name.css");
+@import url("../blocks/display/display.css");
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+li {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+textarea {
+  font: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}

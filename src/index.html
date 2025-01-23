@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Астрологический Портал</title>
+  </head>
+  <body class="page">
+    <div class="stars-background" id="stars-background"></div>
+
+    <header class="header">
+      <h1 class="header__title">✧ Астрологический Портал ✧</h1>
+      <nav class="header__navigation">
+        <a href="#horoscope-section" class="header__navigation-item"
+          >Гороскоп</a
+        >
+        <a href="#card-section" class="header__navigation-item">Карта дня</a>
+        <a href="#name-section" class="header__navigation-item">Имена</a>
+        <a href="#blog-section" class="header__navigation-item">Статьи</a>
+      </nav>
+    </header>
+
+    <main>
+      <section id="horoscope-section" class="page__section horoscope">
+        <h2 class="page__section-title">Гороскоп</h2>
+
+        <div class="horoscope__content">
+          <ul class="horoscope__signs">
+            <template id="horoscope-template">
+              <li class="horoscope__sign">
+                <h3 class="horoscope__sign-name"></h3>
+                <p class="horoscope__sign-date"></p>
+              </li>
+            </template>
+          </ul>
+          <div class="display display-horoscope">
+            <h3 class="display-title">
+              Выберите знак зодиака, чтобы получить персональный гороскоп!
+            </h3>
+            <p class="display-description"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="card-section" class="page__section card">
+        <h2 class="page__section-title">Карта дня</h2>
+
+        <div class="card__content">
+          <article class="card__item">
+            <button class="card__item-button">Получить карту</button>
+            <img class="card__item-image" src="" alt="" />
+          </article>
+
+          <div class="display display-card">
+            <h3 class="display-title">
+              Нажмите, чтобы получить карту дня и узнать, что она вам
+              предскажет!
+            </h3>
+            <p class="display-description"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="name-section" class="page__section name">
+        <h2 class="page__section-title">Толкование имени</h2>
+
+        <div class="name__content">
+          <input
+            type="text"
+            id="name-input"
+            class="name__content-input"
+            placeholder="Введите ваше имя..."
+          />
+          <button class="name__content-button">Узнать значение</button>
+
+          <div class="display display-name">
+            <h3 class="display-title">
+              Вводите имя только на русском языке, используя кириллицу, без цифр
+              и специальных символов.
+            </h3>
+            <p class="display-description"></p>
+          </div>
+        </div>
+      </section>
+
+      <section id="blog-section" class="page__section blog">
+        <h2 class="page__section-title">Статьи по астрологии</h2>
+
+        <div class="blog__content">
+          <div class="blog__tabs">
+            <button class="blog__tabs-button active" data-tab="1">Таро</button>
+            <button class="blog__tabs-button" data-tab="2">Зодиак</button>
+            <button class="blog__tabs-button" data-tab="3">Луна</button>
+          </div>
+
+          <template id="blog-template">
+            <article class="display-blog">
+              <h3 class="display-title"></h3>
+              <p class="display-description"></p>
+            </article>
+          </template>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>© 2025 Астрологический Портал</p>
+    </footer>
+  </body>
+</html>
