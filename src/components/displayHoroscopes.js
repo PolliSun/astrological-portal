@@ -1,6 +1,6 @@
-import horoscopeData from "../utils/horoscopes.json";
+import { getRandomItem } from "../utils/utils";
 
-export const displayHoroscopes = () => {
+export const displayHoroscopes = (horoscopesData) => {
   const zodiacList = document.querySelector(".horoscope__signs");
   const zodiacTemplate = document.getElementById("horoscope-template");
   const horoscopeDisplay = document.querySelector(".display-horoscope");
@@ -9,7 +9,7 @@ export const displayHoroscopes = () => {
 
   const signPredictions = {};
 
-  horoscopeData.signs.forEach((sign) => {
+  horoscopesData.signs.forEach((sign) => {
     const zodiacCard = zodiacTemplate.content.cloneNode(true);
     const zodiacName = zodiacCard.querySelector(".horoscope__sign-name");
     const zodiacDate = zodiacCard.querySelector(".horoscope__sign-date");
@@ -25,10 +25,7 @@ export const displayHoroscopes = () => {
       zodiacItem.classList.add("active");
 
       if (!signPredictions[sign.name]) {
-        const randomHoroscope = Math.floor(
-          Math.random() * sign.horoscopes.length
-        );
-        signPredictions[sign.name] = sign.horoscopes[randomHoroscope];
+        signPredictions[sign.name] = getRandomItem(sign.horoscopes);
       }
 
       horoscopeDisplayName.textContent = sign.name;

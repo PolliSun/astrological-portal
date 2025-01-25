@@ -18,6 +18,8 @@
 
 .display-card {
   min-height: 180px;
+  justify-content: center;
+  gap: 15px;
 }
 
 .display-name {

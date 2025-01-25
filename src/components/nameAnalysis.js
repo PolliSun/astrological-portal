@@ -1,25 +1,28 @@
-import namesData from "../utils/names.json";
-
-export const nameAnalysis = () => {
+export const nameAnalysis = (namesData) => {
   const nameDisplay = document.querySelector(".display-name");
   const displayName = nameDisplay.querySelector(".display-title");
   const displayDescription = nameDisplay.querySelector(".display-description");
-  const input = document.getElementById("name-input").value.trim();
+  const nameButton = document.querySelector(".name__content-button");
+  const nameInput = document.getElementById("name-input");
 
-  displayName.textContent = "";
-  displayDescription.textContent = "";
+  nameButton.addEventListener("click", () => {
+    const input = nameInput.value.trim();
+    displayName.textContent = "";
+    displayDescription.textContent = "";
 
-  if (!/^[а-яА-ЯёЁ]+$/.test(input)) {
-    displayName.textContent = "Введите корректное имя на русском языке.";
-    return;
-  }
+    if (!/^[а-яА-ЯёЁ]+$/.test(input)) {
+      displayName.textContent = "Введите корректное имя на русском языке.";
+      return;
+    }
 
-  const foundName = namesData.names.find((entry) => entry.name === input);
+    const foundName = namesData.names.find((entry) => entry.name === input);
 
-  if (foundName) {
-    displayName.textContent = foundName.name;
-    displayDescription.textContent = foundName.description;
-  } else {
-    displayName.textContent = "К сожалению, значение данного имени не найдено.";
-  }
+    if (foundName) {
+      displayName.textContent = foundName.name;
+      displayDescription.textContent = foundName.description;
+    } else {
+      displayName.textContent =
+        "К сожалению, значение данного имени не найдено.";
+    }
+  });
 };

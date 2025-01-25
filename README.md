@@ -23,7 +23,6 @@
 - `src/pages/index.css` —  файл с основным кодом CSS.
 
 - `src/utils/utils.js` —  файл с утилитами.
-- `src/utils/constants.ts` — файл с константами.
 
 ## Инструкция по запуску
 

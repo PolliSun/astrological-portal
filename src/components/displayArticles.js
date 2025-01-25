@@ -1,11 +1,11 @@
-import articleData from "../utils/articles.json";
+import {toggleActiveClass} from "../utils/utils.js";
 
-export const displayArticles = () => {
+export const displayArticles = (articlesData) => {
   const blogTemplate = document.getElementById("blog-template");
   const blogContent = document.querySelector(".blog__content");
   const tabsButton = document.querySelectorAll(".blog__tabs-button");
 
-  articleData.articles.forEach((article, index) => {
+  articlesData.articles.forEach((article, index) => {
     const blogCard = blogTemplate.content.cloneNode(true);
     const blogCardTitle = blogCard.querySelector(".display-title");
     const blogCardDescription = blogCard.querySelector(".display-description");
@@ -21,15 +21,12 @@ export const displayArticles = () => {
 
   tabsButton.forEach((tab) => {
     tab.addEventListener("click", () => {
-      const blogItem = document.querySelectorAll(".display-blog");
-      tabsButton.forEach((button) => button.classList.remove("active"));
-      blogItem.forEach((content) => content.classList.remove("active"));
-
-      tab.classList.add("active");
-      const tabNumber = tab.dataset.tab;
-      document
-        .querySelector(`.display-blog[data-tab="${tabNumber}"]`)
-        .classList.add("active");
+      const blogItems = document.querySelectorAll(".display-blog");
+      toggleActiveClass(tabsButton, tab);
+      toggleActiveClass(
+        blogItems,
+        document.querySelector(`.display-blog[data-tab="${tab.dataset.tab}"]`)
+      );
     });
   });
 };
