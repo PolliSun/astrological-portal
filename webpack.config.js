@@ -17,7 +17,7 @@ module.exports = {
     compress: true,
     port: 8080,
     open: true,
-    watchFiles: ['src/**/*', 'src/index.html'],
+    watchFiles: ["src/**/*", "src/index.html"],
   },
   module: {
     rules: [
@@ -29,6 +29,10 @@ module.exports = {
       {
         test: /\.(png|svg|jpg|gif|woff(2)?|eot|ttf|otf)$/,
         type: "asset/resource",
+      },
+      {
+        test: /\.html$/i,
+        loader: "html-loader",
       },
       {
         test: /\.css$/,
