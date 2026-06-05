@@ -1,9 +1,10 @@
 @import url("./__title/header__title.css");
 @import url("./__navigation/header__navigation.css");
+@import url("./__button/header__button.css");
 
 .header {
   display: flex;
+  position: relative;
   flex-direction: column;
   align-items: center;
-  margin-bottom: 70px;
 }

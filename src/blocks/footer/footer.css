@@ -1,18 +1,7 @@
 .footer {
-  margin-top: 30px;
-  font-size: clamp(0.75rem, 0.5227rem + 1.1364vw, 1.25rem);
+  margin-top: 10px;
+  font-size: 20px;
   text-align: center;
   color: #ffffff7d;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  .footer {
-    margin-top: 40px;
-  }
-}
-
-@media (min-width: 1025px) {
-  .footer {
-    margin-top: 50px;
-  }
+  width: 100%;
 }

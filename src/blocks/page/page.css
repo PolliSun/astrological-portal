@@ -5,13 +5,14 @@
   font-family: "JetBrains Mono Regular", "Courier New", monospace;
   background-color: #0a192f;
   min-inline-size: 320px;
-  max-inline-size: 1024px;
+  max-inline-size: 1440px;
   margin: 0 auto;
   padding: 10px;
-  position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 1024px) {
   .page {
     padding: 15px;
   }
@@ -19,6 +20,6 @@
 
 @media (min-width: 1025px) {
   .page {
-    padding: 20px;
+    padding: 20px 20px 10px;
   }
-}
+} */

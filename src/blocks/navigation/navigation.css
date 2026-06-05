@@ -1,0 +1,42 @@
+.navigation {
+  margin-bottom: 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.navigation-item {
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  padding: 5px 7px;
+  border-radius: 20px;
+  background: linear-gradient(45deg, #61438554, #51639554);
+  font-size: 20px;
+  text-transform: lowercase;
+}
+
+.navigation-item:hover {
+  background-color: #cfcfcf29;
+}
+
+/* @media (min-width: 768px) and (max-width: 1024px) {
+  .navigation {
+    gap: 10px;
+  }
+  .navigation-item {
+    padding: 5px 10px;
+  }
+}
+
+@media (min-width: 1025px) {
+  .navigation {
+    margin-bottom: 20px;
+  }
+  .navigation {
+    gap: 15px;
+  }
+  .navigation-item {
+    padding: 10px 15px;
+  }
+} */

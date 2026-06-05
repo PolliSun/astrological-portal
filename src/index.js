@@ -1,9 +1,6 @@
 import "./pages/index.css";
-
-import { createStarryBackground } from "./components/starryBackground.js";
-import { TabManager } from "./components/common/TabManager.js";
+import { App } from "./components/App.js";
 
 document.addEventListener("DOMContentLoaded", () => {
-  new TabManager();
-  createStarryBackground();
+  new App();
 });

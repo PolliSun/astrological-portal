@@ -1,6 +1,6 @@
 .header__title {
   margin-bottom: 10px;
-  font-size: clamp(2.1875rem, 1.3352rem + 4.2614vw, 4.0625rem);
+  font-size: 65px;
   background: linear-gradient(45deg, #ff6b6b, #614385);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -8,7 +8,7 @@
   font-family: "Neucha";
 }
 
-@media (min-width: 768px) and (max-width: 1024px) {
+/* @media (min-width: 768px) and (max-width: 1024px) {
   .header__title {
     margin-bottom: 15px;
   }
@@ -18,4 +18,4 @@
   .header__title {
     margin-bottom: 20px;
   }
-}
+} */

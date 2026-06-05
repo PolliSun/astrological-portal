@@ -1,0 +1,7 @@
+.modal__overlay {
+  position: absolute;
+  z-index: -1;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(1.5px);
+  inset: 0;
+}

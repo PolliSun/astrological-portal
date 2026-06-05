@@ -8,6 +8,10 @@
 @import url("../blocks/blog/blog.css");
 @import url("../blocks/name/name.css");
 @import url("../blocks/display/display.css");
+@import url("../blocks/navigation/navigation.css");
+@import url("../blocks/modal/modal.css");
+@import url("../blocks/login/login.css");
+@import url("../blocks/form/form.css");
 
 *,
 *::after,
@@ -51,8 +55,14 @@ textarea {
   cursor: pointer;
   margin: 0;
   padding: 0;
+  outline: none;
 }
 
 body {
   margin: 0;
+  height: 100vh;
+}
+
+main {
+  height: calc(100vh - 211px);
 }
