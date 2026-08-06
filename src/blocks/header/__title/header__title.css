@@ -1,11 +1,11 @@
 .header__title {
-  margin-bottom: 10px;
-  font-size: 65px;
+  font-size: 45px;
   background: linear-gradient(45deg, #ff6b6b, #614385);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   text-align: center;
   font-family: "Neucha";
+  font-weight: 400;
 }
 
 /* @media (min-width: 768px) and (max-width: 1024px) {

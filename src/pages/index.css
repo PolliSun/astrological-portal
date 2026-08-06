@@ -12,6 +12,8 @@
 @import url("../blocks/modal/modal.css");
 @import url("../blocks/login/login.css");
 @import url("../blocks/form/form.css");
+@import url("../blocks/sign-out/sign-out.css");
+@import url("../blocks/not-found/not-found.css");
 
 *,
 *::after,
@@ -64,5 +66,17 @@ body {
 }
 
 main {
-  height: calc(100vh - 211px);
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+}
+
+#tab {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.hidden {
+  display: none;
 }

@@ -1,32 +1,39 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/svg+xml"
+      href="./vendor/images/favicon/favicon.svg"
+    />
+    <link rel="shortcut icon" href="./vendor/images/favicon/favicon.ico" />
+    <link
+      rel="apple-touch-icon"
+      href="./vendor/images/favicon/apple-touch-icon.png"
+    />
+    <title>Астрологический Портал</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="icon" type="image/svg+xml" href="./vendor/images/favicon/favicon.svg" />
-  <link rel="shortcut icon" href="./vendor/images/favicon/favicon.ico" />
-  <link rel="apple-touch-icon" href="./vendor/images/favicon/apple-touch-icon.png" />
-  <title>Астрологический Портал</title>
-</head>
+  <body class="page">
+    <div class="stars-background" id="stars-background"></div>
 
-<body class="page">
-  <div class="stars-background" id="stars-background"></div>
+    <header class="header">
+      <h1 class="header__title">АстроПортал</h1>
+      <a href="/login" class="header__button header__button_login">☾ Войти</a>
+      <div class="header__user"></div>
+    </header>
 
-  <header class="header">
-    <h1 class="header__title">✧ Астрологический Портал ✧</h1>
-    <button class="header__button header__button_login">Войти</button>
     <nav id="navigation"></nav>
-  </header>
 
-  <main>
-    <div id="tab"></div>
-    <div id="modal"></div>
-  </main>
+    <main>
+      <div id="tab"></div>
+      <div id="modal"></div>
+    </main>
 
-  <footer class="footer">
-    <p>© 2025 Астрологический Портал</p>
-  </footer>
-</body>
-
+    <footer class="footer">
+      <p>© 2025 Астрологический Портал</p>
+    </footer>
+  </body>
 </html>

@@ -1,4 +1,5 @@
 import baseHtml from "../../sections/login/login.html";
+import { signInWithGoogle } from "../../api/auth.js";
 
 export class Login {
   constructor({ onLoginSuccess } = {}) {

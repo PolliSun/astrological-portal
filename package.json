@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "core-js": "^3.40.0",
-    "firebase": "^12.13.0"
+    "firebase": "^12.13.0",
+    "navigo": "^8.11.1"
   }
 }

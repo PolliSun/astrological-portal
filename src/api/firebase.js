@@ -1,11 +1,6 @@
 import { initializeApp } from "firebase/app";
-import {
-  getAuth,
-  GoogleAuthProvider,
-  signInWithPopup,
-  onAuthStateChanged,
-} from "firebase/auth";
-import { getDatabase, ref, set, get } from "firebase/database";
+import { getAuth } from "firebase/auth";
+import { getDatabase } from "firebase/database";
 
 const firebaseConfig = {
   apiKey: "AIzaSyAaL6MVbnfiuHsedrsWSMI3RuOsRsrrc8o",
@@ -20,29 +15,5 @@ const firebaseConfig = {
 };
 
 const app = initializeApp(firebaseConfig);
-const auth = getAuth(app);
-const db = getDatabase(app);
-
-export function onUserStateChanged(callback) {
-  return onAuthStateChanged(auth, callback);
-}
-
-export async function signInWithGoogle() {
-  const provider = new GoogleAuthProvider();
-  try {
-    const result = await signInWithPopup(auth, provider);
-    return result.user;
-  } catch (error) {
-    console.error("Ошибка входа через Google:", error);
-    return null;
-  }
-}
-
-export async function saveUserProfile(uid, data) {
-  await set(ref(db, `users/${uid}`), data);
-}
-
-export async function loadUserProfile(uid) {
-  const snapshot = await get(ref(db, `users/${uid}`));
-  return snapshot.exists() ? snapshot.val() : null;
-}
+export const auth = getAuth(app);
+export const db = getDatabase(app);

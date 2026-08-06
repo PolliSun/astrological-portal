@@ -1,0 +1,9 @@
+@import url("./__title/sign-out__title.css");
+@import url("./__buttons/sign-out__buttons.css");
+@import url("./__button/sign-out__button.css");
+
+.sign-out {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
