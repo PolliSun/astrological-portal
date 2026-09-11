@@ -2,7 +2,6 @@ import baseHtml from "../../sections/blog.html";
 import themesBlockHtml from "../../sections/blog/blog-theme.html";
 import forumBlockHtml from "../../sections/blog/blog-forum.html";
 import messagesData from "../../utils/messages.json";
-import userData from "../../utils/user.json";
 import {
   loadLikedMessages,
   addLikedMessage,
@@ -14,14 +13,12 @@ import {
   updateLikesCount,
   saveLikesCount,
 } from "../../api/likesCountStorage.js";
-import { getUserName, saveUserName } from "../../api/userStorage.js";
 
 export class BlogSection {
   constructor(container) {
     this.container = container;
     this.likedMessages = loadLikedMessages();
     this.likesCount = loadLikesCount();
-    this.currentUser = getUserName() || userData;
     this.initLikesCount();
   }
 
@@ -30,7 +27,6 @@ export class BlogSection {
     this.injectBlock();
     this.renderMessages();
     this.renderInfoMessages();
-    this.initUserName();
     this._initThemeButton();
   }
 
@@ -48,18 +44,6 @@ export class BlogSection {
         this.likesCount[message.id] = message.likes;
       });
       saveLikesCount(this.likesCount);
-    }
-  }
-
-  initUserName() {
-    const inputName = this.container.querySelector(".blog__forum-input-name");
-
-    if (userData) {
-      inputName.value = userData.name;
-      if (inputName.value) {
-        inputName.classList.add("blog__forum-input-name-active");
-      }
-      saveUserName(inputName.value);
     }
   }
 
