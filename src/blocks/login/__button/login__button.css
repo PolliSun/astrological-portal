@@ -1,0 +1,16 @@
+.login__button {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.login__button-icon {
+  width: 25px;
+  height: 25px;
+}
+
+.login__button-text {
+  text-decoration: underline;
+  font-size: 18px;
+  color: #fff;
+}

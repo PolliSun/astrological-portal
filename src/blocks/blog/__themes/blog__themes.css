@@ -1,0 +1,43 @@
+.blog__themes {
+  background: linear-gradient(135deg, #61438533, #51639533);
+  border-radius: 20px;
+  border: 1px solid #ffffff1a;
+  padding: 25px 20px;
+}
+
+.blog__themes-title {
+  font-family: "Neucha", cursive;
+  margin-bottom: 20px;
+  font-size: 24px;
+  color: #a8a4e6;
+}
+
+.blog__themes-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.blog__themes-item {
+  border: 1px solid #ffffff1a;
+  border-left: 4px solid transparent;
+  padding: 15px 20px;
+  border-radius: 15px;
+  font-size: 15px;
+}
+
+.blog__themes-button {
+  white-space: nowrap;
+  padding: 15px;
+  border-radius: 40px;
+  cursor: pointer;
+  font-size: 15px;
+  color: white;
+  margin-top: 10px;
+  background: linear-gradient(45deg, #61438554, #51639554);
+}
+
+.blog__themes-item--active {
+  border-color: #614385;
+  background: #61438533;
+}

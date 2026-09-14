@@ -1,0 +1,12 @@
+.modal__button_close {
+  position: absolute;
+  height: 30px;
+  width: 30px;
+  top: 20px;
+  right: 20px;
+}
+
+.modal__button-icon {
+  width: inherit;
+  height: inherit;
+}

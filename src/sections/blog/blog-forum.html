@@ -1,0 +1,61 @@
+<div class="blog__forum">
+  <div class="blog__forum-title">
+    <p class="blog__forum-text">Таро</p>
+    <div class="blog__forum-info">
+      <p class="blog__forum-date"></p>
+      <p class="blog__forum-count"></p>
+    </div>
+  </div>
+  <ul class="blog__forum-messages">
+    <template id="message-template">
+      <li class="blog__forum-item">
+        <div class="blog__forum-block">
+          <p class="blog__forum-name"></p>
+          <p class="blog__forum-message"></p>
+        </div>
+        <div class="blog__forum-block2">
+          <button class="blog__forum-like button">
+            <img
+              class="blog__forum-icon"
+              src="../../vendor/images/icons/like.svg"
+              alt="like"
+            />
+            <span class="blog__forum-like-counter"></span>
+          </button>
+          <button class="blog__forum-reply button">Ответить</button>
+          <button class="blog__forum-like button">Пожаловаться</button>
+        </div>
+      </li>
+    </template>
+    <!--         <li class="blog__forum-item">
+            <div class="blog__forum-block">
+                <p class="blog__forum-name">Водолей_2030</p>
+                <p class="blog__forum-message">Огненные знаки, как вы справляетесь с ретроградным Меркурием?</p>
+            </div>
+            <div class="blog__forum-answer">
+                <p class="blog__forum-answer-name">Стрелец_в_пути</p>
+                <p class="blog__forum-answer-message">Кто-нибудь знает, что означает выпадение Башни в раскладе на
+                    отношения?</p>
+            </div>
+            <div class="blog__forum-block2">
+                <button class="blog__forum-like button">
+                    <img class="blog__forum-icon" src="../../vendor/images/icons/like.svg" alt="like">
+                    <span></span>
+                </button>
+                <button class="blog__forum-like button">Ответить</button>
+                <button class="blog__forum-like button">Пожаловаться</button>
+            </div>
+        </li> -->
+  </ul>
+  <div class="blog__forum-send">
+    <textarea
+      class="blog__forum-input blog__forum-input-text"
+      type="text"
+      name="forum-messages"
+      placeholder="Написать сообщение..."
+      required
+      rows="3"
+    ></textarea>
+    <button class="blog__forum-button">Отправить</button>
+  </div>
+</div>
