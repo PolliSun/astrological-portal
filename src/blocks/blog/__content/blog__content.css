@@ -1,11 +1,11 @@
 .blog__content {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex: 1;
+  gap: 30px;
 }
 
 @media (min-width: 1025px) {
   .blog__content {
-    flex-direction: row;
+    /*     flex-direction: row; */
   }
 }

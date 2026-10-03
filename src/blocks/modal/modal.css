@@ -1,0 +1,17 @@
+@import url("./__title/modal__title.css");
+@import url("./__overlay/modal__overlay.css");
+@import url("./__window/modal__window.css");
+@import url("./__button/modal__button.css");
+
+.modal {
+  position: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10;
+  inset: 0;
+}
+
+.modal_hidden {
+  display: none;
+}

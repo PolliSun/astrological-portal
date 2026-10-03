@@ -1,0 +1,15 @@
+.form__textarea {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  gap: 5px;
+}
+
+.form__textarea_place {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 3px 5px;
+  color: #fff;
+  resize: none;
+  height: 90px;
+}

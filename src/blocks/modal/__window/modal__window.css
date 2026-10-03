@@ -1,0 +1,9 @@
+.modal__window {
+  position: relative;
+  flex-direction: column;
+  background: linear-gradient(135deg, #614385, #516395);
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 20px;
+  display: flex;
+}

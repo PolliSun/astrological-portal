@@ -1,0 +1,14 @@
+.form__input {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 5px;
+}
+
+.form__input_place {
+  border: 1px solid #fff;
+  border-radius: 5px;
+  padding: 2px 5px;
+  color: #fff;
+  height: 40px;
+}
