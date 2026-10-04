@@ -1,4 +1,4 @@
-import baseHtml from "../../../sections/modal/modal.html";
+import baseHtml from "../../sections/modal/modal.html";
 
 export class Modal {
   constructor(container) {

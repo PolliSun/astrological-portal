@@ -1,16 +1,19 @@
-import { createStarryBackground } from "./starryBackground.js";
-import { TabContent } from "./common/TabManager.js";
-import { Navigation } from "./common/Navigation.js";
-import { Modal } from "./common/Modal/Modal.js";
-import { Login } from "./common/Login.js";
-import { SignOut } from "./common/SignOut.js";
-import { CreateTheme } from "./common/CreateTheme.js";
-import { onUserStateChanged } from "../api/auth.js";
-import { loadUserProfile, saveUserProfile } from "../api/users.js";
-import userInfoHtml from "../sections/user/user-info.html";
-import Navigo from "navigo";
-import { BlogSection } from "./common/BlogSection.js";
+import { createStarryBackground } from "./utils/starryBackground.js";
+import { TabManager } from "./components/TabManager/TabManager.js";
+import { Navigation } from "./components/Navigation/Navigation.js";
+import { Modal } from "./components/Modal/Modal.js";
+import { Login } from "./pages/Login/Login.js";
+import { SignOut } from "./pages/SignOut/SignOut.js";
+import { CreateTheme } from "./pages/CreateTheme/CreateTheme.js";
+import { onUserStateChanged } from "./api/auth.js";
+import { loadUserProfile, saveUserProfile } from "./api/users.js";
+import { Blog } from "./pages/Blog/Blog.js";
+import { ZodiacSigns } from "./pages/ZodiacSigns/ZodiacSigns.js";
+import { Names } from "./pages/Names/Names.js";
+import { Cards } from "./pages/Cards/Cards.js";
 import { NotFound } from "./pages/NotFound/NotFound.js";
+import userInfoHtml from "./sections/user/user-info.html";
+import Navigo from "navigo";
 
 export class App {
   constructor() {
@@ -26,15 +29,30 @@ export class App {
     const modal = document.getElementById("modal");
     const router = new Navigo("/");
 
-    this.tab = new TabContent(tabContainer);
+    this.tab = new TabManager(tabContainer);
     this.modal = new Modal(modal);
     this.navigation = new Navigation(navContainer);
     this._initAuthListener();
 
     router
+      .on("/horoscope", async () => {
+        this.navigation.show();
+        await new ZodiacSigns(tabContainer).render();
+        this.navigation.setActiveTab("/horoscope");
+      })
+      .on("/card", async () => {
+        this.navigation.show();
+        await new Cards(tabContainer).render();
+        this.navigation.setActiveTab("/card");
+      })
+      .on("/name", () => {
+        this.navigation.show();
+        new Names(tabContainer).render();
+        this.navigation.setActiveTab("/name");
+      })
       .on("/blog", () => {
         this.navigation.show();
-        new BlogSection(tabContainer).render();
+        new Blog(tabContainer).render();
         this.navigation.setActiveTab("/blog");
       })
       .on("/login", () => {

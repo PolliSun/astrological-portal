@@ -1,4 +1,4 @@
-export class TabContent {
+export class TabManager {
   constructor(container) {
     this.container = container;
   }
