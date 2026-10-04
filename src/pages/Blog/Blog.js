@@ -14,7 +14,7 @@ import {
   saveLikesCount,
 } from "../../api/likesCountStorage.js";
 
-export class BlogSection {
+export class Blog {
   constructor(container) {
     this.container = container;
     this.likedMessages = loadLikedMessages();
